@@ -1,5 +1,10 @@
 #include "CStudent.h"
-
 int main()
-{    return 0;
+{
+    CStudent obj;
+
+    obj.rank();
+    obj.output();
+
+    return 0;
 }

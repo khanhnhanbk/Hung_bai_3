@@ -2,6 +2,7 @@
 #define CSTUDENT_H
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 using namespace std;
 
@@ -16,7 +17,6 @@ public:
     CStudent();
     CStudent(string, float, float);
     ~CStudent();
-    string toString();
     string getFullName();
     float getMath();
     float getLiterature();

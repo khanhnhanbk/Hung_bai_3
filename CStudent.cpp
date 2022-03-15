@@ -19,10 +19,6 @@ CStudent::CStudent(string fullName, float math, float literature)
 CStudent::~CStudent()
 {
 }
-string CStudent::toString()
-{
-    return "Full name: " + fullName + "\nMath score: " + to_string(math) + "\nLiterature score: " + to_string(literature);
-}
 
 string CStudent::getFullName()
 {
@@ -66,6 +62,11 @@ void CStudent::input()
 }
 void CStudent::output()
 {
-    cout << toString() << endl;
-    cout << rank() << endl;
+    // fixed width output
+    cout << std::fixed << std::setprecision(2);
+    cout << "Full name: " << fullName << endl;
+    cout << "Math score: " << math << endl;
+    cout << "Literature score: " << literature << endl;
+    cout << "Average: " << calculateAverage() << endl;
+    cout << "Rank: " << rank() << endl;
 }
